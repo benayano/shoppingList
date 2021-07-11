@@ -1,0 +1,2 @@
+rootProject.name = "Soping List"
+include ':app'

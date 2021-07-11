@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Soping List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_of_item">Name of item</string>
+    <string name="pleas_insert_item">Pleas insert item</string>
+    <string name="title_amount_of_item">Amount of item</string>
+    <string name="ok_dialog">ok</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="apple" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="86dp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvName"
+        tools:text="55" />
+
+    <ImageView
+        android:id="@+id/ivPlus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="4dp"
+        android:layout_margin="50dp"
+        app:srcCompat="@drawable/ic_minus"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <ImageView
+        android:id="@+id/ivMinus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="4dp"
+        app:srcCompat="@drawable/ic_plus"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/plusAndMinus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:padding="16dp"
+        app:constraint_referenced_ids="ivMinus,ivPlus"
+        app:layout_constraintEnd_toEndOf="@+id/tvAmount"
+        app:layout_constraintStart_toStartOf="@+id/tvAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount" />
+</androidx.constraintlayout.widget.ConstraintLayout>
